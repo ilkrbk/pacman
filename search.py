@@ -102,7 +102,11 @@ def uniformCostSearch(problem):
 def nullHeuristic(state, problem=None):
     return 0
 
+def aStarSearch(problem, heuristic=nullHeuristic):
+    return graphSearchWithCosts(problem, heuristic)
+
 # Abbreviations
 bfs = breadthFirstSearch
 dfs = depthFirstSearch
+astar = aStarSearch
 ucs = uniformCostSearch
